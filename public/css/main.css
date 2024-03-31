@@ -1,0 +1,86 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
+/**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/*cabesalho*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #5edf18;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+/*barra de navegação,link*/
+.barra-navegacao a{
+    position: relative;
+    font-size: 1.1rem;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+/*barra de navegação e animação nos links*/
+.barra-navegacao a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #ffff;
+    border-radius: 5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: trasnform .5s;;
+}
+/*barra de navegação e animação nos links 2*/
+.barra-navegacao a:hover::after{
+    transform: scaleX(1);
+}
+/*barra de navegação e botão de login*/
+.barra-navegacao .btn-login{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #ffff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+/*barra de navegação e botão de 
+cadastro*/
+.barra-navegacao .btn-cadastro{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #ffff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+/*barra de navegação e animação nos botões de login e cadastro*/
+.barra-navegacao .btn-login .btn-cadastro:hover{
+    background: #ffff;
+    color: #1fac2c;
+}

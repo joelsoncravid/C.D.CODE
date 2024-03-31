@@ -13,11 +13,26 @@
         <link href={{URL::asset("boot/boxicons/css/boxicons.min.css")}} rel="stylesheet">
    
         <!-- link do css do projeto -->
-        <link href={{{URL::asset("css/estilo.css")}}} rel="stylesheet">
-
+        <link href={{{URL::asset("css/main.css")}}} rel="stylesheet">
+        <link href={{{URL::asset("css/sobre.css")}}} rel="stylesheet">
     </head>
 
     <body>
+            <!-- header -->
+                <header>
+                    <nav class="barra-navegacao">
+                        <a href="#">Home</a>
+                        <a href="#">contacto</a>
+                        <a href="#">Sobre</a>
+                        <a href="#">ghgghgh</a>
+                        <button class="btn-login">Login</button>
+                        <button class="btn-cadastro">cadastro</button>
+                    </nav>
+                </header>
+            <!-- footer -->
+                @yield('conteudo')
+
+                @include('layouts.footer')
 
     </body>
 </html>
